@@ -17,7 +17,7 @@
             <label>Email</label><br>
             <input type="email" name="email" placeholder="Recruiter email" required><br>
             <label>Password</label><br>
-            <input type="password" name="password" placeholder="Password" required><br>
+            <input minlength="8" maxlength="25" type="password" name="password" placeholder="Password" required><br>
             <label>Address</label><br>
             <textarea name="address" cols="31">
             </textarea><br>
