@@ -1,0 +1,51 @@
+html,body{
+    margin: 0;
+    padding:0;  
+}
+:root{
+    --blue:#6C63FF;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .topnav span{
+      float: right;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: var(--blue);
+    color: white;
+  }
+  #hero{
+      width: 40rem;
+      float: right;
+  }
+  .home-hero{
+      padding: 5rem;
+  }
+  .home-hero h1{
+      font-weight: bold;
+      font-size: 4rem;
+  }
+  .home-hero a{
+      text-decoration: none;
+      color: white;
+      background-color: var(--blue);
+      padding: 1rem 2rem;
+      font-weight: bold;
+      font-size: 1rem;
+  }
