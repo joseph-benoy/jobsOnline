@@ -184,3 +184,17 @@ html,body{
     width: fit-content;
     margin-top: 1rem;
   }
+  #myBtn{
+      background-color: var(--blue);
+      color: white;
+      box-shadow: none;
+      border: none;
+      width: fit-content;
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }

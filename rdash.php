@@ -12,7 +12,7 @@ session_start();
 </head>
 <body>
     <?php include("includes/lhead.php");?>
-    <button id="myBtn">Open Modal</button>
+    <button id="myBtn">+ Create Ad</button>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
