@@ -5,6 +5,8 @@ html,body{
 :root{
     --blue:#6C63FF;
 }
+
+/* header*/
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -48,4 +50,39 @@ html,body{
       padding: 1rem 2rem;
       font-weight: bold;
       font-size: 1rem;
+  }
+
+
+  /*login*/
+  .loginWrap{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 15rem;
+      margin-top: 10rem;
+      border: 2px solid var(--blue);
+      padding: 2rem 5rem;
+  }
+  .loginWrap h1{
+      color: var(--blue);
+      text-align: center;
+  }
+  .loginWrap input,select{
+      width: 100%;
+      
+  }
+  .loginWrap button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      color: white;
+      background-color: var(--blue);
+      box-shadow: none;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+  }
+  .loginWrap *{
+      margin-bottom: 0.5rem;
   }
