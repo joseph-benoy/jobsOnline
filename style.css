@@ -290,3 +290,11 @@ html,body{
       font-size: 1rem;
       padding: 0.5rem 1rem;
   }
+  .search-error{
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: -3rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
