@@ -21,6 +21,10 @@ require("includes/connection.php");
     </span>
 </header>
 <main>
+    <form class="search">
+        <input type="search" name="search" placeholder="search" required>
+        <button type="submit">search</button>
+    </form>
     <div class='adWrap'>
     <?php
     $sql = "select * from job";
