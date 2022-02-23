@@ -216,3 +216,30 @@ html,body{
     border-collapse: collapse;
 
   }
+  .adItem{
+      width: 20rem;
+      text-align: center;
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.4);
+      padding: 1rem 1rem;
+        margin: 0.5rem;
+    height: 27rem;;
+    padding-bottom: 2rem;
+    }
+  .adItem img{
+      width: 20rem;
+  }
+  .adItem a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue);
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 5rem;
+  }
+  .adWrap{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding-left: 5rem;
+      padding-top: 2rem;
+  }

@@ -12,7 +12,7 @@
     <img src="images/home1.png" id="hero">
     <div class="home-hero">
         <h1>Find the job that fits your life</h1>
-        <a href="#">Find Jobs</a>
+        <a href="jobs.php">Find Jobs</a>
     </div>
 </body>
 </html>
