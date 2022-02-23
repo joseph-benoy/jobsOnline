@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("includes/connection.php");
 $email = $_POST['email'];
 $password = $_POST['password'];

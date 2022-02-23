@@ -1,5 +1,16 @@
 <?php
 session_start();
+require("includes/connection.php");
+if(isset($_POST['did'])){
+  $did = $_POST['did'];
+  $sql = "delete from job where id=$did";
+  if($con->query($sql)){
+    echo "<script>alert('Ad deleted!');</script>";
+  }
+  else{
+    echo "<script>alert('Connot delete the Ad');</script>";
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +24,52 @@ session_start();
 <body>
     <?php include("includes/lhead.php");?>
     <button id="myBtn">+ Create Ad</button>
+
+    <div class="adList">
+        <table class="rtable">
+          <tr>
+          <th style="width:50%">Title</th>
+          <th style="width:20%">Posted On</th>
+          <th style="width:10%">Openings</th>
+          <th style="width:20%">Last Date</th>
+          <th style="width:20%">Action</th>
+          </tr>
+            <?php
+              $uid = $_SESSION['uid'];
+              $sql = "select * from job where rid=$uid";
+              if($result=$con->query($sql)){
+                while($row=mysqli_fetch_assoc($result)){
+                  $title=$row['title'];
+                  $lastdate=$row['last_date'];
+                  $openings=$row['openings'];
+                  $cdate = $row['date'];
+                  $id = $row['id'];
+                  echo "<tr>
+                    <td>$title</td>
+                    <td>$cdate</td>
+                    <td>$openings</td>
+                    <td>$lastdate</td>
+                    <form method='post'>
+                    <input type='hidden'value='$id' name='did'>
+                    <td><button type='submit'>Delete</button></td>
+                    </form>
+                  </tr>";
+                }
+              }
+              else{
+                echo "Failed : $con->error";
+              }
+
+
+
+
+
+
+
+          ?>
+        </table>
+    </div>
+
 
     <!-- The Modal -->
     <div id="myModal" class="modal">

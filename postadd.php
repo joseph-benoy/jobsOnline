@@ -15,7 +15,7 @@ session_start();
     <?php
         require("includes/connection.php");
         $title = $_POST['title'];
-        $description = trim($_POST['description']);
+        $description = mysqli_real_escape_string($con,trim($_POST['description']));
         $openings = $_POST['openings'];
         $rid = $_POST['rid'];
         $lastdate = $_POST['date'];

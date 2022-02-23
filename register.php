@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <?php include("includes/header.php");?>
-    <div class="regWrap">
+<header class="topnav">
+    <a href="#news" style='font-weight:bold'>JOBS ONLINE</a>
+    <span>
+        <a href="index.php">Home</a>
+        <a  href="jobs.php">Jobs</a>
+        <a  href="login.php">Login</a>
+        <a   class="active" href="register.php">Sign Up</a>
+    </span>
+</header>     <div class="regWrap">
         <h1>Recruiter Sign Up</h1>
         <form method="post" action="reg.php">
             <label>Name</label><br>

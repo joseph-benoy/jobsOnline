@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <?php include("includes/header.php");?>
-    <div class="loginWrap">
+<header class="topnav">
+    <a href="#news" style='font-weight:bold'>JOBS ONLINE</a>
+    <span>
+        <a href="index.php">Home</a>
+        <a  href="jobs.php">Jobs</a>
+        <a  class="active"  href="login.php">Login</a>
+        <a href="register.php">Sign Up</a>
+    </span>
+</header>    <div class="loginWrap">
         <h1>Login</h1>
         <select id="loginSelect" onchange="changeLogin()">
             <option value="admin">Admin</option>
