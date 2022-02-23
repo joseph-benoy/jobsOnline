@@ -243,3 +243,30 @@ html,body{
       padding-left: 5rem;
       padding-top: 2rem;
   }
+  .adContainer h2{
+      font-size: 2.5rem;
+      text-align: center;
+  }
+  .adContainer img{
+      width: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .adContainer span{
+      font-weight: bold;
+  }
+  .adContainer a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue);
+    padding: 0.7rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 5rem;
+  }

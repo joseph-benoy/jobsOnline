@@ -44,6 +44,8 @@ if(isset($_POST['did'])){
                   $openings=$row['openings'];
                   $cdate = $row['date'];
                   $id = $row['id'];
+                  $dt = new DateTime($lastdate);
+                  $lastdate =$dt->format('Y-m-d');
                   echo "<tr>
                     <td>$title</td>
                     <td>$cdate</td>
