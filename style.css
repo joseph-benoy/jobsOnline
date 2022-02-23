@@ -290,13 +290,9 @@ html,body{
       font-size: 1rem;
       padding: 0.5rem 1rem;
   }
-  .search-error{
+  .search-error h1{
       text-align: center;
       margin-top: 2rem;
-      margin-bottom: -3rem;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
   }
 
 
@@ -340,3 +336,25 @@ html,body{
   #Cat{
       display: block;
   }
+  /* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  var(--blue); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  var(--brown); 
+}
+.tabcontent h2{
+  margin-bottom: -2.5rem;
+}

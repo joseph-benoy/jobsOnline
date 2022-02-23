@@ -39,6 +39,7 @@ if(isset($_POST['rid'])){
   </div>
 
   <div id="Cat" class="tabcontent">
+  <h2 style="text-align:center">Ads</h2>
   <div class="adList">
         <table class="rtable">
           <tr>
@@ -87,6 +88,7 @@ if(isset($_POST['rid'])){
   </div>
 
   <div id="Bear" class="tabcontent">
+    <h2 style="text-align:center">Recruiters</h2>
   <div class="adList">
         <table class="rtable">
           <tr>

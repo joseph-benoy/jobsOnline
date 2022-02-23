@@ -24,16 +24,14 @@ require("includes/connection.php");
     <form class="search">
         <input type="search" name="search" placeholder="search" required>
         <button type="submit">search</button>
-        <?php         $keyword = $_GET['search'];
-         echo "<div  class='search-error'><h1>Results for $keyword</h1></div>";?>
-
     </form>
-    <div class='adWrap'>
     <?php
     if(isset($_GET['search'])){
         $keyword = $_GET['search'];
         $query = "select * from job where title like '$keyword%' ";
         if($result = $con->query($query)){
+            echo "<div  class='search-error'><h1>Results for $keyword</h1></div>    <div class='adWrap'>
+            ";
             if(mysqli_num_rows($result)>0){
                 while($row = mysqli_fetch_assoc($result)){
                     $title = $row['title'];
