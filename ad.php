@@ -35,6 +35,14 @@ require("includes/connection.php");
         $url = $row['url'];
         $description = $row['description'];
         $img = $row['img'];
+        $rid =  $row['rid'];
+        $dt = new DateTime($lastdate);
+        $lastdate =$dt->format('Y-m-d');
+        $rdata= mysqli_fetch_assoc($con->query("select * from recruiter where id=$rid"));
+        $rname = $rdata['name'];
+        $remail = $rdata['email'];
+        $rtype = $rdata['type'];
+        $raddress = $rdata['address'];
 
         echo "<div class='adContainer'>
         
@@ -43,7 +51,12 @@ require("includes/connection.php");
         <p><span>Posted On : </span>$cdate</p>
         <p>$description</p>
         <p><span>Openings : </span>$openings</p>
-        <p><span>Last Date : </span>$lastdate</p><br>
+        <p><span>Last Date : </span>$lastdate</p>
+        <h3>Recruiter details</h3>
+        <p><span>name : </span>$rname</p>
+        <p><span>Address : </span>$raddress</p>
+        <p><span>Type : </span>$rtype</p>
+        <p><span>Email : </span>$remail</p>
         <a href='$url' target='_blank'>Visit</a>
         
         
