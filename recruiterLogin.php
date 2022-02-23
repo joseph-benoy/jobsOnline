@@ -12,11 +12,11 @@ if($result = $con->query($sql)){
         header("location:rdash.php");
     }
     else{
-        header("location:login.php");
+        header("location:login.php?error=1");
 
     }
 }
 else{
-    header("location:login.php");
+    header("location:login.php?error=1");
 }
 ?>

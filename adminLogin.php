@@ -13,11 +13,11 @@ if($result = $con->query($sql)){
         header("location:admindash.php");
     }
     else{
-        header("location:login.php");
+        header("location:login.php?error=1");
 
     }
 }
 else{
-    header("location:login.php");
+    header("location:login.php?error=1");
 }
 ?>

@@ -41,5 +41,11 @@
             }
         }
     </script>
+    <?php
+    if(isset($_GET['error'])){
+        echo "<script>alert('Invalid credentials!');</script>";
+    }
+
+?>
 </body>
 </html>
